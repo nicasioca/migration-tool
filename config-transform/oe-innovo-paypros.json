@@ -1,0 +1,8 @@
+{
+  "filename": "",
+  "local_path": "",
+  "new_filename": "",
+  "header": false,
+  "header_list": "previousTokenIdentifier,REMOVE,cardNumber,expirationMonth,expirationYear",
+  "columns": "{ \"header\": false, \"map\": { \"0\": \"previousTokenIdentifier\", \"1\": \"IGNORE\", \"2\": \"cardNumber\", \"3\": \"expirationMonth\", \"4\": \"expirationYear\" }, \"create\": { \"previousMerchantIdentifier\": \"\", \"nameOnCard\": \"\", \"zipCode\": \"\" }, \"build\": [ { \"expirationMonth\": { \"column\": \"expirationMonth\", \"steps\": [ { \"format\": \"{:02}\" } ] } } ], \"order\": [ \"previousTokenIdentifier\", \"previousMerchantIdentifier\", \"nameOnCard\", \"cardNumber\", \"expirationYear\", \"expirationMonth\", \"zipCode\" ] }"
+}

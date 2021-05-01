@@ -1,0 +1,8 @@
+{
+  "filename": "",
+  "local_path": "",
+  "new_filename": "",
+  "header": true,
+  "header_list": "",
+  "columns": "{ \"map\": { \"CustomerPaymentProfileID\": \"previousTokenIdentifier\", \"CardNumber\": \"cardNumber\", \"Zip\": \"zipCode\" }, \"create\": { \"previousMerchantIdentifier\": \"\" }, \"build\": [ { \"expirationYear\": { \"column\": \"CardExpirationDate\", \"steps\": [ { \"slice\": \"[:4]\" } ] } }, { \"expirationMonth\": { \"column\": \"CardExpirationDate\", \"steps\": [ { \"slice\": \"[-2:]\" } ] } }, { \"nameOnCard\": { \"column\": \"FirstName\", \"steps\": [ { \"column_append\": \"\" } ] } }, { \"nameOnCard\": { \"column\": \"LastName\", \"steps\": [ { \"column_append\": \" \" } ] } }, { \"cardNumber\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } }, { \"expirationYear\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } }, { \"expirationMonth\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } } ], \"order\": [ \"previousTokenIdentifier\", \"previousMerchantIdentifier\", \"nameOnCard\", \"cardNumber\", \"expirationYear\", \"expirationMonth\", \"zipCode\" ] }"
+}

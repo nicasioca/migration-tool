@@ -1,0 +1,8 @@
+{
+  "filename": "",
+  "local_path": "",
+  "new_filename": "",
+  "header": true,
+  "header_list": "",
+  "columns": "{ \"map\": { \"VaultKey\": \"previousTokenIdentifier\", \"NameOnCard\": \"nameOnCard\", \"CardNum\": \"cardNumber\", \"Zip\": \"zipCode\" }, \"create\": { \"previousMerchantIdentifier\": \"\" }, \"build\": [ { \"previousTokenIdentifier\": { \"column\": \"previousTokenIdentifier\", \"steps\": [ { \"replace\": { \"pat\": \"r'[{}]+'\", \"repl\": \"\", \"regex\": true } } ] } }, { \"expirationMonth\": { \"column\": \"CardExp\", \"steps\": [ { \"format\": \"{:04}\" }, { \"slice\": \"[:2]\" } ] } }, { \"expirationYear\": { \"column\": \"CardExp\", \"steps\": [ { \"format\": \"{:04}\" }, { \"slice\": \"[2:]\" }, { \"pre_append\": \"20\" } ] } } ], \"order\": [ \"previousTokenIdentifier\", \"previousMerchantIdentifier\", \"nameOnCard\", \"cardNumber\", \"expirationYear\", \"expirationMonth\", \"zipCode\" ] }"
+}

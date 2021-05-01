@@ -1,0 +1,8 @@
+{
+  "filename": "",
+  "local_path": "",
+  "new_filename": "",
+  "header": true,
+  "header_list": "",
+  "columns": "{ \"map\": { \"PaymentAccountID\": \"previousTokenIdentifier\", \"AccountID\": \"previousMerchantIdentifier\", \"BillingName\": \"nameOnCard\", \"CardNumber\": \"cardNumber\", \"ExpirationYear\": \"expirationYear\", \"ExpirationMonth\": \"expirationMonth\", \"BillingZipcode\": \"zipCode\" }, \"build\": [ { \"cardNumber\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } }, { \"expirationYear\": { \"column\": \"expirationYear\", \"steps\": [ { \"pre_append\": \"20\" } ] } }, { \"expirationMonth\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } } ], \"order\": [ \"previousTokenIdentifier\", \"previousMerchantIdentifier\", \"nameOnCard\", \"cardNumber\", \"expirationYear\", \"expirationMonth\", \"zipCode\" ] }"
+}

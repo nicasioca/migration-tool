@@ -1,0 +1,3 @@
+{
+    "fields": "VaultId,VaultKey,CardNum,CardExp,CardType,NameOnCard,Email,Phone,Street,Street2,City,State,Zip,Country,Token"
+}

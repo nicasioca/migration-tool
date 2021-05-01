@@ -1,0 +1,8 @@
+{
+  "filename": "",
+  "local_path": "",
+  "new_filename": "",
+  "header": true,
+  "header_list": "",
+  "columns": "{ \"map\": { \"CUST_REF_NUM\": \"previousTokenIdentifier\", \"CUST_NAME\": \"nameOnCard\", \"CUST_CARDHOLDER_ACCT\": \"cardNumber\", \"CUST_ZIP_CODE\": \"zipCode\" }, \"create\": { \"previousMerchantIdentifier\": \"\" }, \"build\": [ { \"expirationYear\": { \"column\": \"EXPIRY_DATE\", \"steps\": [ { \"slice\": \"[-2:]\" }, { \"pre_append\": \"20\" } ] } }, { \"expirationMonth\": { \"column\": \"EXPIRY_DATE\", \"steps\": [ { \"slice\": \"[:2]\" } ] } }, { \"cardNumber\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } }, { \"expirationYear\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } }, { \"expirationMonth\": { \"column\": \"!=\", \"steps\": [ { \"select\": \"\" } ] } } ], \"order\": [ \"previousTokenIdentifier\", \"previousMerchantIdentifier\", \"nameOnCard\", \"cardNumber\", \"expirationYear\", \"expirationMonth\", \"zipCode\" ] }"
+}

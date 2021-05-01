@@ -1,0 +1,3 @@
+{
+    "fields": "MerchantID,CustomerProfileID,CustomerPaymentProfileID,CustomerID,Description,Email,CardNumber,CardExpirationDate,CardType,BankAccountNumber,BankRoutingNumber,NameOnAccount,BankAccountType,ECheckRecordTypeID,BankName,Company,FirstName,LastName,Address,City,StateProv,Zip,Country,Phone,Fax"
+}

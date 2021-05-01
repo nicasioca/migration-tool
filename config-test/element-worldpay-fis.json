@@ -1,0 +1,3 @@
+{
+    "fields": "PaymentAccountID,AccountID,SubAccountID,CardLogo,CardNumber,ExpirationMonth,ExpirationYear,AccountNumber,RoutingNumber,PaymentAccountReferenceNumber,BillingName,BillingAddress1,BillingAddress2,BillingCity,BillingState,BillingZipcode,BillingCountry,BillingEmail,BillingPhone,ShippingName,ShippingAddress1,ShippingAddress2,ShippingCity,ShippingState,ShippingZipcode,ShippingCountry,ShippingEmail,ShippingPhone"
+}
